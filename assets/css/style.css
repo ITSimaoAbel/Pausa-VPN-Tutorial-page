@@ -1,74 +1,123 @@
 * {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
+
 header {
-    background: #00605f;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
+  background: #00605f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-  .tutorial-step {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9f9f9;
-  }
+.tutorial-step {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
 
-  .tutorial-step img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
+.tutorial-step h2 {
+  text-align: center;
+  color: #00605f;
+}
 
-  .contact {
-    text-align: center;
-    margin: 20px 0;
-  }
+.step {
+  margin: 15px 0;
+}
 
-  .contact a {
-    text-decoration: none;
-    color: white;
-    background: #007BFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+.step img {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 170px;
+}
 
-  #sapp {
-    background-color: #008000;
-  }
+.contact {
+  text-align: center;
+  margin: 20px 0;
+}
 
-  #sapp:hover {
-    background-color: #006400;
-    transform: scale(1.1);
-  }
+.contact a {
+  text-decoration: none;
+  color: white;
+  background: #007BFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
-  #tel {
-    background-color: #007BFF;
-  }
+.contact h2 {
+  color: #00605f;
+}
 
-  #tel:hover {
-    background-color: #0056CC;
-    transform: scale(1.1);
-  }
+#sapp {
+  background-color: #008000;
+}
+
+#sapp:hover {
+  background-color: #006400;
+  transform: scale(1.1);
+}
+
+#tel {
+  background-color: #007BFF;
+}
+
+#tel:hover {
+  background-color: #0056CC;
+  transform: scale(1.1);
+}
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #00605f;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: #00605f;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a img {
   width: 150px;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: center; 
+}
+
+.step {
+  flex: 1 1 calc(25% - 20px); 
+  max-width: calc(25% - 20px); 
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+  color: #00605f;
+}
+
+.step img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .step {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
 }
